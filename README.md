@@ -1,6 +1,8 @@
 TOTP.jl
 =======
 
+[![Build Status](https://travis-ci.org/ylxdzsw/TOTP.jl.svg?branch=master)](https://travis-ci.org/ylxdzsw/TOTP.jl)
+
 ### Installation
 
 ```julia
