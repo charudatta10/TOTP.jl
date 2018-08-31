@@ -1,7 +1,7 @@
-using Base.Test
+using Test
 using TOTP
 
-const secret = b"12345678901234567890"
+const secret = UInt8.(b"12345678901234567890")
 
 @testset "correctness" begin # https://tools.ietf.org/html/rfc6238#appendix-B
     @test genotp(secret, time=0x00000001, ndigits=8) == "94287082"

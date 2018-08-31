@@ -3,6 +3,5 @@ os:
   - osx
   - linux
 julia:
-  - 0.6
-script:
-  - julia -e 'Pkg.clone(pwd()); Pkg.test("TOTP")'
+  - 0.7
+  - 1.0

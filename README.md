@@ -2,6 +2,7 @@ TOTP.jl
 =======
 
 [![Build Status](https://travis-ci.org/ylxdzsw/TOTP.jl.svg?branch=master)](https://travis-ci.org/ylxdzsw/TOTP.jl)
+![Julia v1.0 ready](https://blog.ylxdzsw.com/_static/julia_v1.0_ready.svg)
 
 ### Installation
 
@@ -14,7 +15,7 @@ Pkg.clone("https://github.com/ylxdzsw/TOTP.jl")
 ```julia
 using TOTP
 
-# generate a random key
+# generate a random key (note this method use Julia's built-in random number generator, which is not crypto safe)
 key = gensecret()
 
 # share it to your user by a QR code
